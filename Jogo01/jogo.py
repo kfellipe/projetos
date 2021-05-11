@@ -1,6 +1,11 @@
 import random
 def lin():
     print("=" * 40)
+
+def erro():
+    print("[ERROR]Digite Apenas NÚMEROS!")
+    lin()
+
 while True:
     escuser1 = input("Escolha um número: ")
     lin()
@@ -20,7 +25,7 @@ while True:
                     print("Menos!!!")
                     lin()
                 if tryuser == escom:
-                    print(f"PARABÈNS!!! \nVocê acertou o número! \nVocê fez em {tent} tentativas!!!")
+                    print(f"PARABÈNS!!! \nVocê acertou o número! \nVocê ACERTOU em {tent} tentativas!!!")
                     lin()
                     print(f"Deseja jogar novamente? \n1 - Tentar Novamente \n2 - Sair")
                     while True:
@@ -37,12 +42,9 @@ while True:
                                 print("[ERROR]Digite 1 ou 2!")
                                 lin()
                         else:
-                            print("[ERROR] Digite apenas números! ")
-                            lin()
+                            erro()
                     break
             else:
-                print("[ERROR] Digite apenas números! ")
-                lin()
+                erro()
     else:
-        print("[ERROR] Digite apenas números! ")
-        lin()
+        erro()
