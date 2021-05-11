@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+p {
+    padding-top: 190px;
+    padding-left: 20px;
+}
+.voltar {
+    width: 100px;
+    height: 100px;
+    vertical-align: bottom;
+}
