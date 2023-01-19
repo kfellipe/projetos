@@ -23,7 +23,7 @@ def jogar():
 
     while True:
         line()
-        choice = int(input("Tente adivinhar o numero: "))
+        choice = verify_num()
         if(choice > secret):
             print("O numero sorteado é menor do que o escolhido")
         elif(choice < secret):
@@ -34,3 +34,9 @@ def jogar():
 
 if (__name__ == "__main__"):
     jogar()
+
+def verify_num():
+    while True:
+        choice = input("Tente adivinhar o numero: ")
+        if(choice in range(0,10)):
+            return int(choice)
